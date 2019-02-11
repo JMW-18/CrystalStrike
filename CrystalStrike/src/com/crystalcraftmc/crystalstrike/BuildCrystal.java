@@ -39,7 +39,7 @@ public class BuildCrystal {
         Material [] mats = {Material.CHEST, Material.PACKED_ICE, Material.PACKED_ICE, Material.PACKED_ICE, Material.PACKED_ICE, Material.ICE, Material.ICE, Material.ICE, Material.ICE, Material.OBSIDIAN, Material.OBSIDIAN};
         
         for(int index = 0; index < xCords.length; index++) {
-        	event.getLightning().getLocation().getWorld().getBlockAt(xCords[index], yCords[index], zCords[index]).setType(mats[index]);
+        	baseLocation.getWorld().getBlockAt(xCords[index], yCords[index], zCords[index]).setType(mats[index]);
         }
         
         /*
